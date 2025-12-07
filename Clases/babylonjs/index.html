@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>BabylonJS Local Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body { width:100%; height:100%; margin:0; padding:0; overflow:hidden; background:#202020; }
+    #renderCanvas { width:100%; height:100%; touch-action:none; display:block; }
+  </style>
+  <!-- CDN estable de BabylonJS (core + loaders opcional) -->
+  <script src="https://unpkg.com/babylonjs@6.48.0/babylon.js"></script>
+  <script src="https://unpkg.com/babylonjs-loaders@6.48.0/babylonjs.loaders.min.js"></script>
+  <script src="https://unpkg.com/babylonjs-materials@6.48.0/babylonjs.materials.min.js"></script>
+  <!-- Havok Physics UMD (requerido para físicas avanzadas) -->
+  <script src="https://cdn.babylonjs.com/havok/HavokPhysics_umd.js"></script>
+</head>
+<body>
+  <canvas id="renderCanvas"></canvas>
+  <script src="./main.js"></script>
+</body>
+</html>

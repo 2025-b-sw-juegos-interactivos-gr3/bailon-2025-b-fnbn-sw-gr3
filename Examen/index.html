@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Taxi Clásico - Babylon.js</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    html, body, #renderCanvas {
+      width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+    }
+    #ui {
+      position: absolute; left: 10px; top: 10px; color: white; font-family: Arial, sans-serif;
+      background: rgba(0,0,0,0.4); padding: 8px 12px; border-radius: 6px;
+    }
+  </style>
+  <!-- CDN Babylon.js y loaders -->
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
+  <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+</head>
+<body>
+  <canvas id="renderCanvas"></canvas>
+  <div id="ui">
+    <div>Estado: <span id="estado">Sin paquete</span></div>
+    <div>Paq entregados: <span id="score">0</span></div>
+    <div>Instrucciones: WASD mover — Espacio recoger/soltar</div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

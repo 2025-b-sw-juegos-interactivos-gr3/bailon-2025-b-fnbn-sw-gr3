@@ -1,0 +1,12 @@
+{
+  "name": "babylon-local-playground",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Escena BabylonJS local para pruebas (playground).",
+  "scripts": {
+    "start": "npx http-server . -o /babylonjs -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
